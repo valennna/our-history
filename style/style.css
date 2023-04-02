@@ -158,22 +158,59 @@ nav{
     background-size: cover;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 960px) {
     .container__block {
         margin: 50px 100px 20px 80px;
     }
-
-    .container__block-header h1 {
-        font-size: 30px !important;
-        left: -50%;
-    }
-
     .container__block h1 {
         font-size: 40px;
         bottom: -20px;
     }
 }
+@media only screen and (max-width: 425px) {
+    .container__block {
+        display: grid !important;
+    }
 
+    .container__block h1 {
+        font-size: 40px;
+        bottom: -30px;
+    }
+    .title{
+        width: 27.46vw  !important;
+        height: 13.04vw !important;
+        margin: 15vw 0vw 0vw 0vw;
+    }
+    .block__project-1{
+        margin: 0vw 0vw 0vw 0vw;
+        width: 36.46vw  !important;
+        height: 26.04vw !important;
+    }
+    .block__project-2{
+        margin: 0vw 0vw 0vw 0vw;
+        width: 36.46vw !important;
+        height: 26.04vw !important;
+    }
+    .block__project-3{
+        margin: 0vw 0vw 0vw 0vw;
+        width: 36.46vw !important;
+        height: 26.04vw !important;
+    }
+    .block__gallery-4{
+        width: 36.46vw !important;
+        margin: 0vw 0vw 0vw 0vw;
+        height: 26.04vw !important;
+    }
+    .inner__cursor{
+        display: none;
+    }
+    .inner__cursor.grow{
+        display: none;
+    }
+    .outer__cursor{
+        display: none;
+    }
+}
 #js-scroll {
     height: 200%;
 }
