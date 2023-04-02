@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "MAK";
+    font-style: normal;
+    font-weight: 400;
+  
+    src: local("MAK"),
+         url("/font/Mak/MAK.otf") format("otf");
+  }
+  @font-face {
+    font-family: "MAK";
+    font-style: normal;
+    font-weight: 700;
+  
+    src: local("MAK"),
+         url("/font/Mak/MAK-bold.otf") format("otf");
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+  
+    src: local("Roboto"),
+         url("/font/Roboto/Roboto-Regular.ttf") format("ttf");
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+  
+    src: local("Roboto"),
+         url("/font/Roboto/Roboto-Bold.ttf") format("ttf");
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+  
+    src: local("Roboto"),
+         url("/font/Roboto/Roboto-Thin.woff") format("woff");
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #262526;
+    font-family: 'MAK', sans-serif;
+    font-weight: 400;
+}
+
+.home {
+    overflow: hidden;
+}
+
+/* menu */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+.logo, .menu__item{
+    padding-left: 5.63vw;
+    padding-right: 5.63vw;
+    padding-top: 2.08vw;
+}
+.logo a{
+    color: #B3ADB3;
+    font-size: 2.08vw;
+    text-decoration: none;
+    font-family: 'MAK', sans-serif;
+    font-weight: 400;
+}
+.menu__item{
+    display: flex;
+    font-family: 'MAK', sans-serif;
+    font-weight: 400;
+}
+.link__project{
+    padding-right: 3.13vw;
+}
+.menu__item a{
+    color: #B3ADB3;
+    font-size: 1.56vw;
+    text-decoration: none;
+}
+
+
+
+#js-scroll {
+    height: 200%;
+}
+
+/* project section */
+
+.stone__container {
+    width: 70%;
+    margin: 5.21vw auto;
+    /* border: 1px solid #5c5c5c; */
+    color: #fff;
+    padding: 5.21vw 2.08vw;
+    text-align: center;
+}
+
+.stone__container__title h1{
+    color: #fff;
+    font-size: 5.21vw;
+    font-family: 'MAK', sans-serif;
+    font-weight: 400;
+}
+.stone__container__title{
+    margin-top: 2.60vw;
+}
+.stone__container__images {
+    position: relative;
+    width: 100%;
+    height: 72.92vw;
+    padding: 6.77vw 0;
+}
+
+.stone__image {
+    background: red;
+    margin: 2.08vw auto;
+}
+
+.stone__image__one {
+    width: 39.06vw;
+    height: 26.04vw;
+    background: url(../img/11.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.stone__image__two {
+    width: 19.79vw;
+    height: 26.56vw;
+    position: relative;
+    top: -12.50vw;
+    left: -34.4vw;
+    background: url(../img/22.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.stone__image__three {
+    width: 36.58vw;
+    height: 37.50vw;
+    position: relative;
+    top: -27.08vw;
+    left: 26vw;
+    background: url(../img/33.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.stone__image__four {
+    width: 42.19vw;
+    height: 27.60vw;
+    position: relative;
+    top: -57.29vw;
+    left: -23.3vw;
+    background: url(../img/44.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+
+.stone__next__link {
+    position: relative;
+    top: -5.21vw;
+    width: 100%;
+    height: 20.83vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stone__next__link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 5.21vw;
+    font-family: 'MAK', sans-serif;
+    font-weight: 400;
+    font-size: 5.21vw;
+}
+
+.anime__js__title .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+@media(max-width: 900px) {
+    .stone__container__title h1 {
+        font-size: 40px;
+    }
+
+    .stone__container {
+        width: 80%;
+    }
+
+    .stone__container__images {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .stone__image {
+        width: 90%;
+    }
+
+    .stone__image__one, .stone__image__two, .stone__image__three, .stone__image__four {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+/* cursor */
+
+
+.inner__cursor{
+    position: fixed;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    background-color: #B3ADB3;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s, height 0.5s;
+}
+.inner__cursor.grow{
+    width: 60px;
+    height: 60px;
+    transition: width 0.5s, height 0.5s;
+}
+.outer__cursor{
+    position: fixed;
+    left: 60px;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.1s;
+}

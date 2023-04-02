@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Kurt Davenport | Portfolio by Codegrid</title>
+    <meta name="author" content="harrnish @codegrid">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style/wooden.css" />
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- locomotive-scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+</head>
+
+<body id="js-scroll">
+    <div class="wrapper">
+
+        <!-- menu -->
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html">Астрахань</a>
+            </div>
+            <div class="menu__item">
+                <div class="link__project">
+                    <a href="project.html">О проекте</a>
+                </div>
+                <div class="link__gallery">
+                    <a href="gallery.html">Фотогалерея</a>
+                </div>
+            </div>
+        </nav>
+        <div class="inner__cursor"></div>
+        <div class="outer__cursor"></div>
+        <!-- project section -->
+        <div class="wooden__container" data-scroll-section>
+
+            <div class="wooden__container__title" data-scroll>
+                <h1 class="anime__js__title">Деревянные здания</h1>
+            </div>
+
+            <div class="wooden__container__images">
+                <div class="wooden__image wooden__image__one" data-scroll data-scroll-speed="1">
+                </div>
+                <div class="wooden__image wooden__image__two" data-scroll data-scroll-speed="4">
+                </div>
+                <div class="wooden__image wooden__image__three" data-scrol data-scroll-speed="2">
+                </div>
+                <div class="wooden__image wooden__image__four" data-scroll data-scroll-speed="4">
+                </div>
+                <div class="wooden__image wooden__image__five" data-scroll data-scroll-speed="4">
+                </div>
+                <div class="wooden__image wooden__image__six" data-scroll data-scroll-speed="4">
+                </div>
+                <!-- <div class="wooden__image wooden__image__seven" data-scroll data-scroll-speed="4">
+                </div>
+                <div class="wooden__image wooden__image__nine" data-scroll data-scroll-speed="4">
+                </div> -->
+            </div>
+
+            <div class="wooden__next__link" data-scroll>
+                <a href="gallery.html">Хотите увидеть еще?</a>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // smooth scroll 
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#js-scroll'),
+            smooth: true,
+            smoothMobile: true,
+            inertia: 0.75
+        });
+
+        // project title animation 
+        var textWrapper = document.querySelector('.anime__js__title');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline()
+            .add({
+                targets: '.anime__js__title .letter',
+                translateY: [60, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 600 + 30 * i
+            });
+
+        // project subtitle animation 
+        TweenMax.from(".wooden__container__subtitle", 2, {
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+
+        // project image fade 
+        TweenMax.from(".wooden__image__one", 2, {
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+    </script>
+</body>
+
+</html>
