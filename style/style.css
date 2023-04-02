@@ -171,15 +171,14 @@ nav{
         z-index: 2;
     }
     .menu__item{
-        display: grid;
+        display: none;
     }
     .logo, .menu__item{
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
+        padding-left: 36.5vw;
         padding-top: 2vw;
     }
     .logo a{
-        font-size: 2.08vw;
+        font-size: 6.08vw;
     }
     .container{
         display: block !important;
@@ -207,21 +206,25 @@ nav{
         width: 70vw !important;
         height: 50vw !important;
         margin-bottom: 20vw;
+        margin-left: 12vw;
     }
     .block__project-2{
         width: 70vw !important;
         height: 50vw !important;
         margin-bottom: 20vw;
+        margin-left: 12vw;
     }
     .block__project-3{
         width: 70vw !important;
         height: 50vw !important;
         margin-bottom: 20vw;
+        margin-left: 12vw;
     }
     .block__gallery-4{
         width: 70vw !important;
         height: 50vw !important;
         margin-bottom: 20vw;
+        margin-left: 12vw;
     }
     .title__project a{
         font-size: 7vw;
