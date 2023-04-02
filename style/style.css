@@ -158,48 +158,76 @@ nav{
     background-size: cover;
 }
 
-@media(max-width: 960px) {
-    .container__block {
-        margin: 50px 100px 20px 80px;
-    }
-    .container__block h1 {
-        font-size: 40px;
-        bottom: -20px;
-    }
-}
-@media only screen and (max-width: 425px) {
-    .container__block {
-        display: grid !important;
-    }
 
-    .container__block h1 {
-        font-size: 40px;
-        bottom: -30px;
+@media only screen and (max-width: 960px) {
+    .home{
+        overflow: auto;
     }
-    .title{
-        width: 27.46vw  !important;
-        height: 13.04vw !important;
-        margin: 15vw 0vw 0vw 0vw;
+    nav{
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+    }
+    .menu__item{
+        display: grid;
+    }
+    .logo, .menu__item{
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 2vw;
+    }
+    .logo a{
+        font-size: 2.08vw;
+    }
+    .container{
+        display: block !important;
+        margin-left: 1.5vw;
+    }
+    .container__block.container__block-header{
+        display: block !important;
+    }
+    .container__block.block__project-1{
+        display: block !important;
+    }
+    .container__block.block__project-2{
+        display: block !important;
+    }
+    .container__block.block__project-3{
+        display: block !important;
+    }
+    .container__block.block__project-4{
+        display: block !important;
+    }
+    .container__block{
+        margin: 5.21vw 15.63vw 1.04vw 4.17vw;
     }
     .block__project-1{
-        margin: 0vw 0vw 0vw 0vw;
-        width: 36.46vw  !important;
-        height: 26.04vw !important;
+        width: 70vw !important;
+        height: 50vw !important;
+        margin-bottom: 20vw;
     }
     .block__project-2{
-        margin: 0vw 0vw 0vw 0vw;
-        width: 36.46vw !important;
-        height: 26.04vw !important;
+        width: 70vw !important;
+        height: 50vw !important;
+        margin-bottom: 20vw;
     }
     .block__project-3{
-        margin: 0vw 0vw 0vw 0vw;
-        width: 36.46vw !important;
-        height: 26.04vw !important;
+        width: 70vw !important;
+        height: 50vw !important;
+        margin-bottom: 20vw;
     }
     .block__gallery-4{
-        width: 36.46vw !important;
-        margin: 0vw 0vw 0vw 0vw;
-        height: 26.04vw !important;
+        width: 70vw !important;
+        height: 50vw !important;
+        margin-bottom: 20vw;
+    }
+    .title__project a{
+        font-size: 7vw;
+    }
+    .container__block h1{
+        bottom: -9vw;
     }
     .inner__cursor{
         display: none;
