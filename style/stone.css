@@ -213,7 +213,37 @@ nav{
         left: 0;
     }
 }
-
+@media only screen and (max-width: 960px) {
+    .home{
+        overflow: auto;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+    }
+    .menu__item{
+        display: none;
+    }
+    .logo, .menu__item{
+        padding-left: 30.5vw;
+        padding-top: 2vw;
+    }
+    .logo a{
+        font-size: 6.08vw;
+    }
+    .inner__cursor{
+        display: none;
+    }
+    .inner__cursor.grow{
+        display: none;
+    }
+    .outer__cursor{
+        display: none;
+    }
+}
 /* cursor */
 
 

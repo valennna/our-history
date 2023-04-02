@@ -161,14 +161,12 @@ nav{
 
 @media only screen and (max-width: 960px) {
     .home{
-        overflow: auto;
+        overflow: hidden;
     }
     nav{
-        position: fixed;
+        position: static;
         top: 0;
-        display: flex;
-        justify-content: space-between;
-        z-index: 2;
+        display: block;
     }
     .menu__item{
         display: none;
@@ -181,6 +179,7 @@ nav{
         font-size: 6.08vw;
     }
     .container{
+        overflow-y: auto;
         display: block !important;
         margin-left: 1.5vw;
     }
@@ -446,7 +445,80 @@ nav{
     line-height: 160%;
 }
 
-
+@media only screen and (max-width: 960px) {
+    .container__project{
+        display: block;
+    }
+    .container__project{
+        position: static;
+        margin-top: 20vw;
+        margin-bottom: 12vw;
+    }
+    .text__left__box{
+        width: 85vw;
+    }
+    .about{
+        font-size: 14vw
+    }
+    .about__text {
+        width: 85vw;
+        font-size: 4vw !important;
+    }
+    .photo__1, .photo__4{
+        width: 88.7vw;
+        height: 65.67vw;
+    }
+    .wrap__photo__project {
+        display: block;
+        margin-top: 4.21vw;
+    }
+    .photo__block__right__2 {
+        width: 88vw;
+        height: 140vw;
+    }
+    .photo__block__right__3 {
+        width: 88vw;
+        height: 145vw;
+    }
+    .photo__2{
+        width: 116vw;
+        height: 117.4vw;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo__3{
+        width: 116vw;
+        height: 117.4vw;
+    }
+    .text__photo_right {
+        font-size: 4vw;
+        line-height: 160%;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    .text__photo_right1, .text__photo_right2, .text__photo_right3, .text__photo_right4{
+        width: 88vw;
+    }
+    .block__additional__1{
+        display: none;
+    }
+    .block__additional__2 {
+        width: 88vw;
+    }
+    .text__additional {
+        margin-top: 5.21vw;
+        width: 88vw;
+        top: 10.42vw;
+        margin-bottom: 6vw;
+    }
+    .text__additional p{
+        font-size: 4vw;
+    }
+    .text__add__1{
+        margin-bottom: 6vw;
+    }
+}
 
 
 
