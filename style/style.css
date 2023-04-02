@@ -174,7 +174,7 @@ nav{
         display: none;
     }
     .logo, .menu__item{
-        padding-left: 36.5vw;
+        padding-left: 30.5vw;
         padding-top: 2vw;
     }
     .logo a{
@@ -186,6 +186,7 @@ nav{
     }
     .container__block.container__block-header{
         display: block !important;
+        padding-left: 3vw;
     }
     .container__block.block__project-1{
         display: block !important;
