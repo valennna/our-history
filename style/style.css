@@ -161,7 +161,7 @@ nav{
 
 @media only screen and (max-width: 960px) {
     .home{
-        overflow: hidden;
+        overflow: auto;
     }
     nav{
         position: static;
@@ -179,7 +179,6 @@ nav{
         font-size: 6.08vw;
     }
     .container{
-        overflow-y: auto;
         display: block !important;
         margin-left: 1.5vw;
     }
