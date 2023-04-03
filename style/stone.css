@@ -186,32 +186,7 @@ nav{
 
 .anime__js__title .letter {
     display: inline-block;
-    line-height: 1em;
-}
-
-@media(max-width: 900px) {
-    .stone__container__title h1 {
-        font-size: 40px;
-    }
-
-    .stone__container {
-        width: 80%;
-    }
-
-    .stone__container__images {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .stone__image {
-        width: 90%;
-    }
-
-    .stone__image__one, .stone__image__two, .stone__image__three, .stone__image__four {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
+    line-height: 1estone
 }
 @media only screen and (max-width: 960px) {
     .home{
@@ -228,11 +203,53 @@ nav{
         display: none;
     }
     .logo, .menu__item{
-        padding-left: 30.5vw;
-        padding-top: 2vw;
+        padding-left: 33vw;
+        padding-top: 6vw;
     }
     .logo a{
         font-size: 6.08vw;
+    }
+    .stone__container__title h1 {
+        font-size: 14vw;
+    }
+    .stone__container__title {
+        margin-top: 15vw;
+    }
+    .stone__container {
+        width: 80%;
+    }
+    .stone__image__one{
+        width: 73.06vw;
+        height: 52.04vw;
+    }
+    .stone__image__two{
+        height: 98vw;
+    }
+    .stone__container__images {
+        width: 100%;
+        margin: 0 auto;
+        height: 280vw;
+    }
+    .stone__image__three{
+        height: 75vw;
+    }
+    .stone__image__four{
+        height: 47vw;
+    }
+    .stone__next__link{
+        top: 8vw;
+    }
+    .stone__image {
+        width: 90%;
+    }
+
+    .stone__image__one, .stone__image__two, .stone__image__three, .stone__image__four {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .letter {
+        display: none;
     }
     .inner__cursor{
         display: none;

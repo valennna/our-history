@@ -443,8 +443,8 @@ nav{
         display: none;
     }
     .logo, .menu__item{
-        padding-left: 30.5vw;
-        padding-top: 2vw;
+        padding-left: 33vw;
+        padding-top: 6vw;
     }
     .logo a{
         font-size: 6.08vw;
@@ -458,6 +458,27 @@ nav{
     }
     .outer__cursor{
         display: none;
+    }
+    .container__project{
+        height: 100%;
+        margin-left: 5.63vw;
+        margin-right: 5.63vw;
+    }
+    .project__block{
+        display: flex;
+        width: 100%;
+        padding-bottom: 20vw;
+    }
+    .project__title {
+        margin-top: 25vw;
+        margin-bottom: 14vw;
+        text-align: center;
+    }
+    .project__title h1{
+        font-size: 10vw;
+    }
+    .project__text_items{
+        font-size: 2vw;
     }
 }
 
